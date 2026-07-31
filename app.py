@@ -9,7 +9,7 @@ from Crypto.Util.Padding import pad, unpad
 from google.protobuf.timestamp_pb2 import Timestamp
 # আপনার কাস্টম মডিউল (একই ফোল্ডারে থাকতে হবে)
 from byte import *
-from byte import xSEndMsg, Auth_Chat
+from byte import xSEndMsg, Auth_Chat *
 from black9 import openroom, spmroom
 import xKEys
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
