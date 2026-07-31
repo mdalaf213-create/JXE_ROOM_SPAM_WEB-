@@ -5,3 +5,4 @@ pycryptodome
 protobuf
 PyJWT
 gunicorn
+byte
