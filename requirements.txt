@@ -6,3 +6,4 @@ protobuf
 PyJWT
 gunicorn
 byte
+psutil
