@@ -8,3 +8,4 @@ gunicorn
 byte
 psutil
 protobuf_decoder
+aiohttp
