@@ -22,9 +22,18 @@ spam_thread = None
 targets = []                   # inv_uid.txt থেকে লোড
 app = Flask(__name__)
 C = "\033[96m"; G = "\033[92m"; Y = "\033[93m"; R = "\033[91m"; RS = "\033[0m"; BOLD = "\033[1m"
-_ID = '4575104506'
-_PW = 'TORIKUL_TORIKUL_E6H3H'
-
+try:
+    with open('accs.txt', 'r') as f:
+        line = f.readline().strip()
+        if line and ':' in line:
+            _ID, _PW = line.split(':', 1)
+        else:
+            _ID = '4575104506'
+            _PW = 'TORIKUL_TORIKUL_E6H3H'
+except Exception as e:
+    print(f"Error loading accs.txt: {e}")
+    _ID = '4575104506'
+    _PW = 'TORIKUL_TORIKUL_E6H3H'
 # ==================== ব্যাজ ভ্যালু ====================
 BADGES = {
     "V_BADGE": 32768,
