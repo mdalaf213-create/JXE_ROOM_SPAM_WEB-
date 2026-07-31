@@ -8,7 +8,7 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from google.protobuf.timestamp_pb2 import Timestamp
 # আপনার কাস্টম মডিউল (একই ফোল্ডারে থাকতে হবে)
-from byte import 
+from byte import *
 from byte import xSEndMsg, Auth_Chat
 from xHeaders import 
 from black9 import openroom, spmroom
